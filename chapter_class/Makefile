@@ -3,10 +3,10 @@
 CXX = g++
 
 # 编译选项
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Wall -std=c++11 -g -O0 
 
 # 目标文件
-TARGET = use_point
+TARGET = test
 
 # 源文件
 SRCS = point.cpp use_point.cpp
