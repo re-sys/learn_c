@@ -87,6 +87,7 @@ int main(){
     cout<<"sizeof(Animal):"<<sizeof(Animal)<<endl;
     cout<<"sizeof(Base2):"<<sizeof(Base2)<<endl;
     cout<<"sizeof(Base3):"<<sizeof(Base3)<<endl;
+    auto age = 8;
     return 0;
 }
 

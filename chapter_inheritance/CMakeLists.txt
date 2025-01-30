@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 project(inheritance)
-
-add_executable(main main.c)
-set(CMAKE_C_STANDARD 11)
+# set (SRC inherit.cpp)
+# aux_source_directory(${PROJECT_SOURCE_DIR} SRC)
+file(GLOB SRC ${CMAKE_SOURCE_DIR}/*.cpp)
+add_executable(${PROJECT_NAME} ${SRC})
+include_directories(${CMAKE_SOURCE_DIR}/include)
+# 默认就是C++11
+# set(CMAKE_C_STANDARD 11)
 set(HOME /home/wufy/learn_c)
 set(EXECUTABLE_OUTPUT_PATH ${HOME}/bin)
